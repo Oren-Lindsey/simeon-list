@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simeon's List - List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/favicon.ico') }}">
+    <meta name="theme-color" 
+      content="#00c937" 
+      media="(prefers-color-scheme: light)">
+    <meta name="theme-color" 
+      content="#008404" 
+      media="(prefers-color-scheme: dark)">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap');
+    </style>
+    <script src="{{url_for('static', filename='js/toggleItem.js')}}"></script>
+    <script src="{{url_for('static', filename='js/check.js')}}"></script>
+    <meta name="robots" content="noindex" />
+    <meta property="og:title" content="List" />
+    <meta property="og:url" content="https://list.imsay.repl.co/list" />
+    <meta property="og:site_name" content="Simeon's List" />
+    <meta property="og:image" content="https://list.imsay.repl.co/static/assets/simeon-list-logo.png" />
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  </head>
+  <body>
+    <script>console.log("Hello World");</script>
+    <h1> Simeon's List </h1>
+    <br>
+    <p>
+       <div class=listItem>
+      <h2>Nerf saturn</h2>
+      <p class=price>~$50</p>
+      <a href="https://www.google.com/shopping/product/16081093207281493301?client=safari&q=nerf+saturn+rival&prds=eto:6280200169543339084_0;13847443254626814033_0;2105238454730742219_0&sa=X&ved=0ahUKEwjEhbuBz7jzAhXBg-AKHcncD-oQ9pwGCAg" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nerf-saturn-checkbox" name="nerf-saturn-checkbox" value="nerf-saturn" onclick='toggleItem("nerf-saturn")'>
+      <label for="nerf-saturn-checkbox"  id="nerf-saturn-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Chess game</h2>
+      <p class=price>$33</p>
+      <a href="https://www.amazon.com/dp/B07FZVNXKP" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="chess-checkbox" name="chess-checkbox" value="chess" onclick='toggleItem("chess")'>
+      <label for="chess-checkbox"  id="chess-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Uno digital game</h2>
+      <p class=price>$20</p>
+      <a href="https://www.amazon.com/Basic-Fun-Electronic-Handheld-Screen/dp/B08CVW35GX/ref=pd_bxgy_img_2/134-5907000-3938156?pd_rd_w=q80CS&pf_rd_p=c64372fa-c41c-422e-990d-9e034f73989b&pf_rd_r=3GZTN7F1W36PTVCZBPZW&pd_rd_r=9c8f21b4-74ef-453e-b0a2-5c05fab0ab92&pd_rd_wg=SsIXQ&pd_rd_i=B08CVW35GX&psc=1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="uno-checkbox" name="uno-checkbox" value="uno" onclick='toggleItem("uno")'>
+      <label for="uno-checkbox"  id="uno-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Yahtzee digital game</h2>
+      <p class=price>$11</p>
+      <a href="https://www.amazon.com/Hasbro-A2125-Yahtzee-Handheld-Digital/dp/B00ABA0ZNQ/ref=pb_allspark_dp_sims_pao_desktop_session_based_9/134-5907000-3938156?pd_rd_w=7kCUA&pf_rd_p=e896123b-6614-49c5-873e-d532e726c2f0&pf_rd_r=R9582CTFN72C51PTQMXT&pd_rd_r=8a48763f-2676-40f3-b600-8906b4402287&pd_rd_wg=QU1pd&pd_rd_i=B00ABA0ZNQ&psc=1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="yahtzee-checkbox" name="yahtzee-checkbox" value="yahtzee" onclick='toggleItem("yahtzee")'>
+      <label for="yahtzee-checkbox"  id="yahtzee-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Nerf sideswipe curve shot</h2>
+      <p class=price>$25</p>
+      <a href="https://www.amazon.com/NERF-Sideswipe-XXI-1200-Downward-Straight/dp/B08SXXX3N9/ref=pb_allspark_dp_sims_pao_desktop_session_based_8/134-5907000-3938156?pd_rd_w=sUSjs&pf_rd_p=e896123b-6614-49c5-873e-d532e726c2f0&pf_rd_r=A8AYGFR0ZSNBWV89CA4E&pd_rd_r=9581ad1b-dcb1-447c-ab4e-eb3c8156bb2a&pd_rd_wg=D2v32&pd_rd_i=B08SXXX3N9&psc=1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nerf-curve-checkbox" name="nerf-curve-checkbox" value="nerf-curve" onclick='toggleItem("nerf-curve")'>
+      <label for="nerf-curve-checkbox"  id="nerf-curve-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Nerf rival mercury</h2>
+      <p class=price>$50</p>
+      <a href="https://www.amazon.com/NERF-Mercury-XIX-500-Blaster-Target/dp/B07YR23JDZ/ref=pb_allspark_dp_sims_pao_desktop_session_based_19/134-5907000-3938156?pd_rd_w=WUiQJ&pf_rd_p=e896123b-6614-49c5-873e-d532e726c2f0&pf_rd_r=8G9GS4CVH085KFGD1PR4&pd_rd_r=90e367ba-d1f9-428a-a0ac-09b294749951&pd_rd_wg=FUfHr&pd_rd_i=B07YR23JDZ&psc=1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nerf-mercury-checkbox" name="nerf-mercury-checkbox" value="nerf-mercury" onclick='toggleItem("nerf-mercury")'>
+      <label for="nerf-mercury-checkbox"  id="nerf-mercury-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Nerf Ultra Pharaoh</h2>
+      <p class=price>$50</p>
+      <a href="https://nerf.hasbro.com/en-us/product/nerf-ultra-pharaoh-blaster-gold-accents-10-dart-clip-10-nerf-ultra-darts-compatible-only-with-nerf-ultra-darts:83A5262B-8593-4FD4-9B79-9F9632CFBAE2" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nerf-pharaoh-checkbox" name="nerf-pharaoh-checkbox" value="nerf-pharaoh" onclick='toggleItem("nerf-pharaoh")'>
+      <label for="nerf-pharaoh-checkbox"  id="nerf-pharaoh-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Nerf elite 2.0 echo</h2>
+      <p class=price>$32</p>
+      <a href="https://nerf.hasbro.com/en-us/product/nerf-elite-2-0-echo-cs-10-blaster-24-nerf-darts-10-dart-clip-removable-stock-and-barrel-extension-4-tactical-rails:19599B84-133C-41C0-94E0-D75159A6B426" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nerf-echo-checkbox" name="nerf-echo-checkbox" value="nerf-echo" onclick='toggleItem("nerf-echo")'>
+      <label for="nerf-echo-checkbox" id="nerf-echo-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Nerf Elite 2.0 turbine</h2>
+      <p class=price>$40</p>
+      <a href="https://nerf.hasbro.com/en-us/product/nerf-elite-2-0-turbine-cs-18-motorized-blaster-36-nerf-darts-18-dart-clip-built-in-customizing-capabilities:EAF8E96A-5E52-4C9A-90DB-61E3F582D4A1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nerf-turbine-checkbox" name="nerf-turbine-checkbox" value="nerf-turbine" onclick='toggleItem("nerf-turbine")'>
+      <label for="nerf-turbine-checkbox"  id="nerf-turbine-label"> Loading... </label>
+      </div>
+        <div class=listItem>
+      <h2>Nerf Rival roundhouse</h2>
+      <p class=price>$37</p>
+      <a href="https://nerf.hasbro.com/en-us/product/nerf-rival-roundhouse-xx-1500-red-blaster-clear-rotating-chamber-5-integrated-magazines-15-nerf-rival-rounds:8CD30734-FAB5-4B08-A9EC-8A1C87CA9980" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nerf-rh-checkbox" name="nerf-rh-checkbox" value="nerf-rh" onclick='toggleItem("nerf-rh")'>
+      <label for="nerf-rh-checkbox"  id="nerf-rh-label"> Loading... </label>
+      </div>
+        <div class=listItem>
+      <h2>Nerf rival takedown</h2>
+      <p class=price>$21</p>
+      <a href="https://nerf.hasbro.com/en-us/product/nerf-rival-takedown-xx-800-blaster-pump-action-breech-load-8-round-capacity-90-fps-8-nerf-rival-rounds-team-red:7AC36D40-0614-4EAE-BA0E-561D585E015A" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nerf-rt-checkbox" name="nerf-rt-checkbox" value="nerf-rt" onclick='toggleItem("nerf-rt")'>
+      <label for="nerf-rt-checkbox"  id="nerf-rt-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Wolf LR-1 Nerf Alpha Strike</h2>
+      <p class=price>$10</p>
+      <a href="https://nerf.hasbro.com/en-us/product/wolf-lr-1-nerf-alpha-strike-toy-blaster:E4A4BD47-6A7B-4DB7-91D2-659F27A27FA4" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="lr1-checkbox" name="lr1-checkbox" value="lr1" onclick='toggleItem("lr1")'>
+      <label for="lr1-checkbox"  id="lr1-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Nerf mega thunderhawk</h2>
+      <p class=price>$40</p>
+      <a href="https://www.google.com/shopping/product/18210433870165934561?client=safari&q=nerf+mega+thunderhawk&prds=eto:4897725876954368391_0;15783847827825071705_0;14222042723919829306_0&sa=X&ved=0ahUKEwiGifyC1bjzAhWimuAKHQhQAx0Q9pwGCA8" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nerf-thunderhawk-checkbox" name="nerf-thunderhawk-checkbox" value="nerf-thunderhawk" onclick='toggleItem("nerf-thunderhawk")'>
+      <label for="nerf-thunderhawk-checkbox"  id="nerf-thunderhawk-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Nerf Kronos</h2>
+      <p class=price>$21</p>
+      <a href="https://nerf.hasbro.com/en-us/product/nerf-rival-kronos-xviii-500-blue:B7111CD0-7D16-408A-B597-40BC63B0A790" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nerf-kronos-checkbox" name="nerf-kronos-checkbox" value="nerf-kronos" onclick='toggleItem("nerf-kronos")'>
+      <label for="nerf-kronos-checkbox"  id="nerf-kronos-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Yellow Nerf ultra Mask</h2>
+      <p class=price>$16</p>
+      <a href="https://www.google.com/shopping/product/11430092467464239225?client=safari&q=nerf+ultra+mask&prds=eto:17255803180466475774_1;17255803180466475774_0;3902846983514306262_0&sa=X&ved=0ahUKEwiQmNn_jbnzAhWhUt8KHVvTDkAQ9pwGCA0" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="mask-yellow-checkbox" name="mask-yellow-checkbox" value="mask-yellow" onclick='toggleItem("mask-yellow")'>
+      <label for="mask-yellow-checkbox"  id="mask-yellow-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Nerf Rival Blue mask</h2>
+      <p class=price>$15</p>
+      <a href="https://nerf.hasbro.com/en-us/product/nerf-rival-face-mask-blue:49407886-5056-9047-F531-E67C78572347" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="mask-blue-checkbox" name="mask-blue-checkbox" value="mask-blue" onclick='toggleItem("mask-blue")'>
+      <label for="mask-blue-checkbox"  id="mask-blue-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>nerf Dreadbolt</h2>
+      <p class=price>$60</p>
+      <a href="https://www.google.com/shopping/product/1?client=safari&q=dreadbolt+nerf&prds=epd:8774620832934433977,eto:8774620832934433977_0,pid:8774620832934433977,prmr:1&sa=X&ved=0ahUKEwiB_5jVkLnzAhVRdt8KHbw_BSoQ9pwGCAg" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nerf-dreadbolt-checkbox" name="nerf-dreadbolt-checkbox" value="nerf-dreadbolt" onclick='toggleItem("nerf-dreadbolt")'>
+      <label for="nerf-dreadbolt-checkbox"  id="nerf-dreadbolt-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Screwball Game</h2>
+      <p class=price>$20</p>
+      <a href="https://www.amazon.com/dp/B088X4YC4X/ref=twister_B09HSWNJP7?_encoding=UTF8&psc=1">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="sb-game-checkbox" name="sb-game-checkbox" value="sb-game" onclick='toggleItem("sb-game")'>
+      <label for="sb-game-checkbox"  id="sb-game-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Lego train</h2>
+      <p class=price>$40</p>
+      <a href="https://www.google.com/shopping/product/660911013156260149?client=safari&q=lego+train&prds=eto:10298639457171802373_0;12093050438987885285_0&sa=X&ved=0ahUKEwihnuiblLnzAhVln-AKHTRADZsQ9pwGCAY" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="lego-train-checkbox" name="lego-train-checkbox" value="lego-train" onclick='toggleItem("lego-train")'>
+      <label for="lego-train-checkbox"  id="lego-train-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Supreme nerf gun</h2>
+      <p class=price>$60</p>
+      <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwjbz5_V67rzAhWnBogJHUw2DMMYABAHGgJxbg&sig=AOD64_0BwfBM9kuMXgJfyCpSqxB5pRhSQg&ctype=5&q=&ved=0ahUKEwjSkprV67rzAhX-lHIEHRJSDGcQww8IsQM&adurl=" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nerf-supreme-checkbox" name="nerf-supreme-checkbox" value="nerf-supreme" onclick='toggleItem("nerf-supreme")'>
+      <label for="nerf-supreme-checkbox"  id="nerf-supreme-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Test item (Ignore)</h2>
+      <p class=price>$60</p>
+      <a href="https://example.com" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="test-item-checkbox" name="test-item-checkbox" value="test-item" onclick='toggleItem("test-item")'>
+      <label for="test-item-checkbox"  id="test-item-label"> Loading... </label>
+      </div>
+    <div class=navbar>
+      <a href="/">Go home</a>
+      <br>
+      <a href="/credits">Credits</a>
+    </div> 
+    </p>
+    <script>checkItems()</script>
+    <script>setInterval(checkItems, 1500);</script>
+  </body>
+</html>
