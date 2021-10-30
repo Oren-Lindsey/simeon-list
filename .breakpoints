@@ -19,9 +19,9 @@
     "templates/list.html": [
       {
         "id": "7cb37538-aee5-4e54-ab72-0af0e7df37f4",
-        "line": 36,
-        "version": 2260,
-        "index": 1738
+        "line": 40,
+        "version": 2272,
+        "index": 2025
       }
     ],
     "templates/style.css": [

@@ -14,27 +14,27 @@ def index():
 items = {
   "nerf-saturn": False,
 }
-db["nerf-saturn"] = False
-db["nerf-pharaoh"] = False
-db["nerf-echo"] = False
-db["nerf-turbine"] = False
-db["nerf-rh"] = False
-db["nerf-rt"] = False
-db["lr1"] = False
-db["nerf-thunderhawk"] = False
-db["nerf-kronos"] = False
-db["mask-yellow"] = False
-db["mask-blue"] = False
-db["nerf-dreadbolt"] = False
-db["sb-game"] = False
-db["lego-train"] = False
-db["nerf-supreme"] = False
-db["chess"] = False
-db["test-item"] = True
-db["uno"] = False
-db["yahtzee"] = False
-db["nerf-curve"] = False
-db["nerf-mercury"] = False
+#db["nerf-saturn"] = False
+#db["nerf-pharaoh"] = False
+#db["nerf-echo"] = False
+#db["nerf-turbine"] = False
+#db["nerf-rh"] = False
+#db["nerf-rt"] = False
+#db["lr1"] = False
+#db["nerf-thunderhawk"] = False
+#db["nerf-kronos"] = False
+#db["mask-yellow"] = False
+#db["mask-blue"] = False
+#db["nerf-dreadbolt"] = False
+#db["sb-game"] = False
+#db["lego-train"] = False
+#db["nerf-supreme"] = False
+#db["chess"] = False
+#db["test-item"] = True
+#db["uno"] = False
+#db["yahtzee"] = False
+#db["nerf-curve"] = False
+#db["nerf-mercury"] = False
 
 def setDict():
   for i in db:
