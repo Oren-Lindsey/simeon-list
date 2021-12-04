@@ -600,3 +600,6 @@
   -ms-user-select: all;      /* No support yet */
   user-select: all;          /* Likely future */   
 }
+html {
+  scroll-behavior: smooth;
+}

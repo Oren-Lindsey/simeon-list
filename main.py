@@ -1,4 +1,5 @@
 #Made by Oren Lindsey and Simeon Lindsey, ©2021
+#todo = enable smooth-scroll
 
 from flask import Flask, render_template
 from replit import db
